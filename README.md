@@ -108,3 +108,10 @@ This message shows that your installation appears to be working correctly.
 
 **this is all about docker**
 
+#### DRAWBACK OF DOCKER 
+
+1. DOCKER DEAMONS ITSELF RUNS WITH A ROOT USER
+
+2. IT IS A SINGLE PROCESS OR MONILOTHIC PROCESS
+
+
