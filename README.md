@@ -30,7 +30,7 @@ Dockerfile ?
 
 Dockerfile is a file where you provide the steps to build your Docker Image.
 
-Images 
+#Images 
 
 An image is a read-only template with instructions for creating a Docker container
 
