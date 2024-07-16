@@ -106,12 +106,24 @@ This message shows that your installation appears to be working correctly.
 
 `docker push (image-name)`
 
-**this is all about docker**
 
 #### DRAWBACK OF DOCKER 
 
 1. DOCKER DEAMONS ITSELF RUNS WITH A ROOT USER
 
 2. IT IS A SINGLE PROCESS OR MONILOTHIC PROCESS
+
+**CLONE YOUR GIT REPO WITH A MACHINE**
+
+**COMMANDS**
+
+GIT CLONE (GITHUB URL OF FILES)
+
+LIKE 
+
+`gitclone https://github.com/sunilrasrania/docker.git`
+
+now in this we will go to specfic repositry where we have our first dockerfile in our case this file in folder called (dockerfile) 
+
 
 
