@@ -1,7 +1,4 @@
 # docker 
-in this we will learn about docker and containerization. 
-
-# docker 
  In this we will learn about docker and containerization 
 
  
@@ -29,9 +26,11 @@ docker run -> runs container from docker images
 docker push -> push the container image to public/private regestries to share the docker images.
 
 Dockerfile ?
+
 Dockerfile is a file where you provide the steps to build your Docker Image.
 
 Images 
+
 An image is a read-only template with instructions for creating a Docker container
 
 
