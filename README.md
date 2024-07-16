@@ -1,4 +1,4 @@
-# docker 
+# Docker 
  In this we will learn about docker and containerization 
 
  
@@ -30,12 +30,80 @@ Dockerfile ?
 
 Dockerfile is a file where you provide the steps to build your Docker Image.
 
-#Images 
+Images 
 
 An image is a read-only template with instructions for creating a Docker container
 
+## INSTALL DOCKER
 
+A very detailed instructions to install Docker are provide in the below link
 
+https://docs.docker.com/get-docker/ 
 
+For Demo,
+You can create an Ubuntu EC2 Instance on AWS and run the below commands to install docker.
 
- 
+`sudo apt update`
+
+`sudo apt install docker.io -y`
+
+A easy way to verify your Docker installation is by running the below command
+
+`docker run hello-world`
+
+If the output says:
+
+`docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create": dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.`
+
+This can mean two things,
+
+Docker deamon is not running.
+Your user does not have access to run docker commands.
+
+Start Docker daemon
+
+`sudo systemctl status docker`
+
+`sudo systemctl start docker`
+
+Grant Access to your user to run docker commands
+
+`sudo usermod -aG docker ubuntu`
+
+In the above command ubuntu is the name of the user, you can change the username appropriately.
+
+**Docker is Installed, up and running 🥳🥳**
+
+docker run hello-world
+
+**output**
+
+>....
+>....
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+>...
+>...
+
+**Build your first Docker Image**
+
+### Commands
+
+`docker build -t (name) image:latest.`
+
+**Verify Docker Image is created**
+
+`docker images`
+
+**Run your First Docker Container**
+
+`docker run -it (image name)`
+
+**Push the Image to DockerHub and share it with the world**
+
+`docker push (image-name)`
+
+**this is all about docker**
+
