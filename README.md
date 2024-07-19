@@ -72,6 +72,10 @@ Grant Access to your user to run docker commands
 
 `sudo usermod -aG docker ubuntu`
 
+`newgrp docker`
+
+
+
 In the above command ubuntu is the name of the user, you can change the username appropriately.
 
 **Docker is Installed, up and running 🥳🥳**
@@ -89,6 +93,19 @@ This message shows that your installation appears to be working correctly.
 >...
 
 **Build your first Docker Image**
+
+`sudo systemctl start docker
+sudo systemctl enable docker`
+
+`sudo usermod -aG docker $USER`
+
+`newgrp docker`
+
+`groups $USER`
+
+
+$user is ubuntu or our any server 
+
 
 ### Commands
 
